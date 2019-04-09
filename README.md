@@ -34,9 +34,19 @@ tmux source ~/.tmux.conf
 
 ## SPACEEMACS
 
-For Mac:
+NOTE: You need a version of emacs 24.4 of higher.
+
+For EC2:
 ```
-brew install emacs
+sudo yum install gtk2-devel
+wget https://ftp.gnu.org/gnu/emacs/emacs-26.1.tar.gz
+tar -zxvf emacs-26.1.tar.gz
+cd emacs-26.1
+./configure --with-gnutls=no --with-mailutils
+make
+sudo make install
+cd ..
+rm -rf emacs-*
 git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
 ln -s ~/configuration/.spacemacs ~/.spacemacs
 ```
