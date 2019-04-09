@@ -1,5 +1,10 @@
 # configuration
 
+## Clone the configuration
+```
+git clone https://github.com/azi92rach/configuration.git
+```
+
 ## TMUX
 
 For Mac:
